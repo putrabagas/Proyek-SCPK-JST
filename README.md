@@ -1,4 +1,4 @@
-Jaringan Syaraf Tiruan\
+Jaringan Syaraf Tiruan
 
 Anggota Kelompok :\
 Nama  : Demas Arvin Purba Anggana\
