@@ -218,17 +218,6 @@ net.trainParam.lr = 0.1;
 
 [net_keluaran,tr,Y,E] = train(net,data_latih,target_latih);
 
-%% Hasil setelah pelatihan
-bobot_hidden = net_keluaran.IW{1,1};
-bobot_keluaran = net_keluaran.LW{2,1};
-bias_hidden = net_keluaran.b{1,1};
-bias_keluaran = net_keluaran.b{2,1};
-jumlah_iterasi = tr.num_epochs;
-nilai_keluaran = Y;
-nilai_error = E;
-error_MSE = (1/N)*sum(nilai_error.^2);
-
-
 %% Get Data from GUI
 mata = str2num(get(handles.mata,'string'));
 mulut = str2num(get(handles.mulut,'string'));
